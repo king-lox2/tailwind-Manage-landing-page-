@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Tailwind Website Practice</title>
+ <link rel="stylesheet" href="css/main.css"  />
+  </head>
+  <body>
+           <!--NAVBAR -->
+    <nav class="relative  container mx-auto p-6">
+      <div class="flex items-center justify-between ">
+            <!--LOGO -->
+        <a class="pt-1" href="#" >
+          
+         <img src="img/logo.svg" alt="logo" />
+        
+        </a> 
+         
+       
+            <!--NAVLINKS -->
+        <div class=" hidden md:flex space-x-6 text-gray-600 uppercase font-semibold">
+        <a class="hover:border-b-4 border-purple-500 " href="#">Pricing</a>
+        <a class="hover:border-b-4 border-purple-500 " href="#">Products </a>
+        <a class="hover:border-b-4 border-purple-500 " href="#">About Us</a>
+        <a class="hover:border-b-4 border-purple-500 " href="#">Careers</a>
+        <a class="hover:border-b-4 border-purple-500 " href="#">Community</a>
+        </div>
+                <!--BTN 1 -->
+        <div class=" hidden md:block rounded-full py-2 px-3  border-2 text-sm cursor-pointer  uppercase border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white hover:font-medium transition duration-500 ease-out">
+          <a href="#">Get Started</a>
+        </div>
+        <!--Bar Icon -->
+        <button id="burger" class="block hamburger md:hidden font-bold  focus:outline-none text-brightRed shadow-2xl ">
+         <svg  xmlns="http://www.w3.org/2000/svg" class=" h-8 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+</svg>
+        </button>
+        
+      </div>
+      <!-- hamburger-links-->
+      <div class="md:hidden">
+        <div id="menu" class="absolute  flex flex-col text-gray-600 items-center self-end  py-8  mt-6 text-sm space-y-6 font-semibold hidden bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md uppercase">
+        <a href="#">Pricing</a>
+        <hr class="border-2 border-brightRedSupLight w-full"/>
+        <a href="#">Products</a>
+         <hr class="border-2 border-brightRedSupLight w-full"/>
+        <a href="#">About Us</a>
+         <hr class="border-2 border-brightRedSupLight w-full"/>
+        <a href="#">Careers</a>
+         <hr class="border-2 border-brightRedSupLight w-full"/>
+        <a href="#">Community</a>
+        
+        </div>
+      </div>
+    </nav> 
+    <!--END OF NAVBAR -->
+      
+      <!-- HERO SECTION -->
+      
+    <section id="hero">
+      <div class="container flex mx-auto px-6 mt-10 space-y-0 md:space-y-0 items-center flex-col-reverse md:flex-row " >
+    <!--LEFT -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2 " >
+       <h1 class="max-w-md text-center md:text-left text-4xl md:text-5xl font-bold"> Bring everyone together to build better products </h1>
+       
+       <p class="max-w-sm  text-center md:text-left text-darkGrayishBlue">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+       </p>
+       
+          <div class="flex justify-center md:justify-start"
+          
+          > 
+          <a href="#" class="rounded-full py-2 px-3  border-2 text-sm cursor-pointer  uppercase border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white hover:font-medium transition duration-500 ease-out">Get Started</a>
+        </div>    
+        
+        </div>
+        
+        <!--   IMAGE  -->
+        
+        <div class="md:w-1/2">
+      <img src="img/illustration-intro.svg" alt="illustration" />
+        </div>
+        
+      </div>
+    </section>
+          <!-- Features Section -->
+    <section id="features">
+      <div class="flex flex-col md:flex-row container md:space-y-0 space-y-12  mt-10 mx-auto px-4">
+       <!-- LEFT  -->
+        <div class="flex flex-col space-y-12 md:w-1/2 ">
+          <h2 class="text-center md:text-left font-bold text-4xl max-w-md">What's different about manage ?
+          </h2>
+          
+          <p class="text-center md:text-left max-w-sm text-darkGrayishBlue">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product team.  </p>
+          
+        </div>
+        
+         <!--  NUMBERED LIST  -->
+     <div class="flex flex-col space-y-8 md:w-1/2">
+
+          <!-- LISTITEM 1 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          
+         <!--  HEADING  -->
+          <div class="rounded-full bg-brightRedSupLight md:bg-transparent ">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed  ">
+                01
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                Track company-wide progress
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden md:block font-bold mb-4 text-lg ">
+           Track company-wide progress
+            </h3>
+            
+            <p class="text-darkGrayishBlue ">
+              See how your day-to-day tasks fit into wilder vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never loose sight of the bigger picture again 
+            </p>
+          </div>
+        </div>
+        
+                  <!-- LISTITEM 2-->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          
+         <!--  HEADING  -->
+          <div class="rounded-full bg-brightRedSupLight md:bg-transparent ">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed  ">
+                02
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                Track company-wide progress
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden md:block font-bold mb-4 text-lg ">
+           Track company-wide progress
+            </h3>
+            
+            <p class="text-darkGrayishBlue">
+              See how your day-to-day tasks fit into wilder vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never loose sight of the bigger picture again 
+            </p>
+          </div>
+        </div>
+        
+                  <!-- LISTITEM 3 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+          
+         <!--  HEADING  -->
+          <div class="rounded-full bg-brightRedSupLight md:bg-transparent ">
+            <div class="flex items-center space-x-2">
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed  ">
+                03
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden">
+                Track company-wide progress
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden md:block font-bold mb-4 text-lg ">
+           Track company-wide progress
+            </h3>
+            
+            <p class="text-darkGrayishBlue">
+              See how your day-to-day tasks fit into wilder vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never loose sight of the bigger picture again 
+            </p>
+          </div>
+        </div>
+ 
+       </div>
+      </div>
+    </section>
+    <!--   Testimonials  -->
+    <section id="testimonials">
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+       <!--  HEADING  -->
+        <h2 class="text-4xl text-center font-bold">
+        What's different about manage ?
+        </h2>
+     <!-- Testimonials Container  -->
+      <div class="flex flex-col mt-24 md:flex-row  md:space-x-6 ">
+        
+      <!-- Testimonials Content 1 -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+      <img class="w-16 -mt-14" src="img/avatar-ali.png" alt="Ali" />
+      <h5 class="text-lg font-semibold">Ali Ashab</h5>
+      
+      <p class="text-sm text-darkGrayishBlue">
+       " Manage has supercharged our team workflow. The ability to maintain visibility on larger milestone at all times keeps everyone motivated. "
+      </p>
+        </div>
+       
+      <!-- Testimonials Content 2 -->
+        <div class=" hidden md:flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+      <img class="w-16 -mt-14" src="img/avatar-anisha.png" alt="Ali" />
+      <h5 class="text-lg font-semibold">Ali Ashab</h5>
+      
+      <p class="text-sm text-darkGrayishBlue">
+       " Manage has supercharged our team workflow. The ability to maintain visibility on larger milestone at all times keeps everyone motivated. "
+      </p>
+        </div>
+        
+       <!-- Testimonials Content 3 -->
+        <div class="hidden md:flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+      <img class="w-16 -mt-14" src="img/avatar-richard.png" alt="Ali" />
+      <h5 class="text-lg font-semibold">Ali Ashab</h5>
+      
+      <p class="text-sm text-darkGrayishBlue">
+       " Manage has supercharged our team workflow. The ability to maintain visibility on larger milestone at all times keeps everyone motivated. "
+      </p>
+        </div>
+      </div>
+            <div class="my-16" >
+          <a class="rounded-full py-2 px-3  border-2 text-sm cursor-pointer  uppercase border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white hover:font-medium transition duration-500 ease-out"  href="#">Get Started</a>
+        </div>
+      
+      </div>
+    </section>
+  <!-- Call to Action -->
+    <section id="cta" class="bg-brightRed">
+      <!-- FLEX CONTAINER -->
+      <div class="flex container items-center justify-between px-6 flex-col space-y-12  mx-auto py-24 md:flex-row md:py-12 md:space-y-0">
+        
+      <!-- HEADING -->
+      <h2 class="text-white font-semibold text-4xl  text-center md:text-4xl md:text-left leading-tight md:max-w-xl">
+     Simplify how your team works today. 
+      </h2>
+      
+      <div >
+           <a class="rounded-full py-2 px-3 shadow-2xl border-2 text-sm cursor-pointer  uppercase border-brightRed bg-white
+ text-brightRed hover:bg-gray-900 hover:text-white hover:font-medium transition duration-500 ease-out"  href="#">Get Started</a>
+        
+      </div>
+      
+      </div>
+    </section>
+    
+         <!--FOOTER -->
+         
+    <footer id="footer" class="bg-veryDarkBlue">
+      
+     <!--FLEX CONTAINER -->
+      <div class="container flex flex-col-reverse justify-between mx-auto px-6 py-10  space-y-8 md:flex-row md:space-y-0 ">
+        
+      <!--LOGO & SOCIAL LINKS -->
+      <div class="flex flex-col-reverse items-center justify-between  space-y-12  md:flex-col md:space-y-0 md:items-start ">
+        
+        <div class="text-white my-4  md:hidden">
+          Copyright Everist 2022 All Rights Reserved 
+        </div>
+        
+        <!-- LOGO -->
+        <div>
+        <img class="h-8" src="img/logo-white.svg" alt="logo" />
+        </div>
+        
+        <!-- SOCIAL LINKS -->
+        
+        <div class=" flex justify-center space-x-4">
+          <a href="#">
+            <img src="img/icon-facebook.svg" alt="" />
+          </a>
+          
+          <a href="#">
+          <img src="img/icon-instagram.svg" alt="" />
+          </a>
+          
+          <a href="#">
+    <img src="img/icon-pinterest.svg" alt="" />
+          </a>
+          <a href="#">
+      <img src="img/icon-youtube.svg" alt="" />        
+          </a>
+          <a href="#">
+    <img src="img/icon-twitter.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- SOCIAL LINKS -->
+          <div class="flex justify-around space-x-32">
+        
+        <div class="flex space-y-3 flex-col text-white">
+          <a href="#">Home</a>
+        <a href="#">Pricing </a>
+         <a href="#">Documentation</a>
+          <a href="#">Rest Api</a>
+           <a href="#">Privacy Policy</a>
+        </div>
+        
+         <div class="flex flex-col space-y-3  text-white">
+          <a href="#">Products</a>
+         <a href="#">Careers</a>
+          <a href="#">Socials</a>
+        <a href="#">Community</a>
+        </div>
+    
+      </div>
+      <!-- Input -->
+      <div class="flex flex-col justify-between">
+        <form >
+          <div class="flex space-x-3" >
+        <input type="email" placeholder="Get our newsletter via email" class="rounded-full px-4 focus:outline-none flex flex-1"  />
+        <button class="text-white rounded-full bg-brightRed hover:brightRedLight px-6 py-2">
+          Go
+        </button>
+        </div>
+        </form>
+        <div class=" hidden text-white md:block">
+        Copyright Everist 2022 <br />All Rights Reserved 
+        </div>
+      </div>
+  
+      </div>
+    </footer>
+    
+    
+      <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
